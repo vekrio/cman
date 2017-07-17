@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+虽然在CentOS操作系统中具有多语言包，但其man手册是英文的，对于新手来说能够使用中文man手册将加快学习速度。
 
-You can use the [editor on GitHub](https://github.com/vekrio/test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vekrio/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+工具/原料
+Linux操作系统：CentOS 6.6
+软件：manpages-zh-1.5.1.tar.gz
+方法/步骤
+1
+将安装包下载到本地
+http://pkgs.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz/13275fd039de8788b15151c896150bc4/
+CentOS系统安装中文man手册
+2
+打开系统终端,输入：tar xf manpages-zh-1.5.1.tar.gz进行解压缩
+CentOS系统安装中文man手册
+CentOS系统安装中文man手册
+3
+cd manpages-zh-1.5.1
+进入安装目录
+CentOS系统安装中文man手册
+4
+./configure --disable-zhtw
+安装配置
+CentOS系统安装中文man手册
+CentOS系统安装中文man手册
+5
+make && make install
+安装
+CentOS系统安装中文man手册
+CentOS系统安装中文man手册
+6
+设置环境变量：vim /etc/profile.d/cman.sh
+输入内容：
+alias cman='man -M /usr/local/share/man/zh_CN'
+保存退出
+CentOS系统安装中文man手册
+CentOS系统安装中文man手册
+7
+source /etc/profile.d/cman.sh
+重新执行别名文件
+CentOS系统安装中文man手册
+8
+测试，输入命令：cman ls
+CentOS系统安装中文man手册
+END
+注意事项
+中文帮助手册的使用命令是cman,目前只翻译部分不是所有的帮助都是中文
+如果想使用英文帮助，可以使用命令man
