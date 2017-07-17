@@ -1,9 +1,13 @@
 ##虽然在CentOS操作系统中具有多语言包，但其man手册是英文的，对于新手来说能够使用中文man手册将加快学习速度。
 
 #工具/原料
+
 >Linux操作系统：CentOS 6.6
+
 >软件：manpages-zh-1.5.1.tar.gz
+
 >方法/步骤
+
 1
 将安装包下载到本地
 http://pkgs.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz/13275fd039de8788b15151c896150bc4/
