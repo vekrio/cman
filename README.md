@@ -1,3 +1,5 @@
+markdown http://www.jianshu.com/p/q81RER
+
 ##虽然在CentOS操作系统中具有多语言包，但其man手册是英文的，对于新手来说能够使用中文man手册将加快学习速度。
 
 #工具/原料
@@ -17,6 +19,7 @@ http://pkgs.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz
 3: cd manpages-zh-1.5.1             #进入安装目录
 
 4: ./configure --disable-zhtw      #安装配置
+![]http://jingyan.baidu.com/album/f25ef25466bffc482c1b82b6.html?picindex=5
 
 5:  make && make install            #安装
 
