@@ -14,7 +14,7 @@ http://pkgs.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz
 
 2:打开系统终端,输入：tar xf manpages-zh-1.5.1.tar.gz进行解压缩
 
-3.cd manpages-zh-1.5.1             #进入安装目录
+3: cd manpages-zh-1.5.1             #进入安装目录
 
 4: ./configure --disable-zhtw      #安装配置
 
