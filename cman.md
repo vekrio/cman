@@ -1,4 +1,4 @@
-
+中文man https://jingyan.baidu.com/article/f25ef25466bffc482c1b82b6.html
 
 虽然在CentOS操作系统中具有多语言包，但其man手册是英文的，对于新手来说能够使用中文man手册将加快学习速度。
 
